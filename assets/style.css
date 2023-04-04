@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+.container {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr 0.25fr;
+  grid-template-rows: 1fr;
+  grid-area: ". egg .";
+}
+
+.egg {
+  grid-area: egg;
+}
+
+.main-title {
+  font-family: Fraunces;
+  text-align: center;
+  font-size: 30px;
+  color: hsl(0, 0%, 100%);
+}
+
+.egg {
+  background-image: url("/src/images/mobile/image-transform.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 375px;
+  height: 312px;
+}
+
+.article-white {
+  font-family: fraunces;
+  padding: 24px;
+  color: hsl(212, 27%, 19%);
+}
+.article-white p {
+  font-family: barlow;
+  color: hsl(232, 10%, 55%);
+}
+.article-white a {
+  color: hsl(213, 9%, 39%);
+  font-size: 18px;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
