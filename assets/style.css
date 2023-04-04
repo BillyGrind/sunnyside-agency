@@ -1,42 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
-.container {
-  display: grid;
-  grid-template-columns: 0.25fr 1fr 0.25fr;
-  grid-template-rows: 1fr;
-  grid-area: ". egg .";
+header,
+body,
+footer {
+  background-color: hsl(210, 4%, 67%);
 }
 
-.egg {
-  grid-area: egg;
-}
-
-.main-title {
-  font-family: Fraunces;
-  text-align: center;
-  font-size: 30px;
-  color: hsl(0, 0%, 100%);
-}
-
-.egg {
-  background-image: url("/src/images/mobile/image-transform.jpg");
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url("/src/images/mobile/image-header.jpg");
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   width: 375px;
-  height: 312px;
+  height: 538px;
+  margin: auto;
+}
+.header-container .menu-top {
+  display: flex;
+  justify-content: space-between;
+}
+.header-container .menu-top .navbar {
+  display: none;
+}
+.header-container .main-title {
+  font-size: fraunces, serif;
+  font-weight: 900;
+  font-size: 40px;
+  letter-spacing: 6.25px;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
 }
 
-.article-white {
-  font-family: fraunces;
-  padding: 24px;
-  color: hsl(212, 27%, 19%);
-}
-.article-white p {
-  font-family: barlow;
-  color: hsl(232, 10%, 55%);
-}
-.article-white a {
-  color: hsl(213, 9%, 39%);
+body {
   font-size: 18px;
-  text-align: center;
 }/*# sourceMappingURL=style.css.map */
