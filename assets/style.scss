@@ -201,16 +201,21 @@ $White: hsl(0, 0%, 100%);
 }
 
 @media screen and (min-width: 900px) {
+  .body-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+  }
+  .comment{
+    grid-column: 2/2;
+    display: flex;
+    flex-direction: row;
+  }
   .header-container {
     background-image: url("/src/images/desktop/image-header.jpg");
   }
-  .egg {
-    display: grid;
-    grid-template-columns: 1fr;
-    background-image: url("/src/images/desktop/image-transform.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+  .transform{
+    content: url("/src/images/desktop/image-transform.jpg");
   }
   .navbar {
     display: flex;
