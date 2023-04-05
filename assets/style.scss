@@ -41,7 +41,7 @@ $White: hsl(0, 0%, 100%);
   .header-container {
     display: flex;
     flex-direction: column;
-    background-image: url("/src/images/mobile/image-header.jpg");
+    background-image: url("src/images/mobile/image-header.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -131,13 +131,13 @@ $White: hsl(0, 0%, 100%);
   }
 
   .graphic-design {
-    background-image: url("/src/images/mobile/image-graphic-design.jpg");
+    background-image: url("src/images/mobile/image-graphic-design.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
   }
   .photography {
-    background-image: url("/src/images/mobile/image-photography.jpg");
+    background-image: url("src/images/mobile/image-photography.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -212,10 +212,10 @@ $White: hsl(0, 0%, 100%);
     flex-direction: row;
   }
   .header-container {
-    background-image: url("/src/images/desktop/image-header.jpg");
+    background-image: url("src/images/desktop/image-header.jpg");
   }
   .transform{
-    content: url("/src/images/desktop/image-transform.jpg");
+    content: url("src/images/desktop/image-transform.jpg");
   }
   .navbar {
     display: flex;
