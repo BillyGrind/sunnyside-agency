@@ -1,7 +1,6 @@
 // F O N T S
 
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
 
 // C O L O R S
 
@@ -25,65 +24,200 @@ $Grayish_blue: hsl(210, 4%, 67%);
 $White: hsl(0, 0%, 100%);
 
 // Design were created for 1440px Desktop
+// Design were created for 375px Smartphone
 // Body Font-size : 18px
 
- .container {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-content: center;
-   text-align: center;
-   width: 375px;
-//   margin-left: 20%;
-//   margin-right: 20%;
-// }
+//Variables Size
 
-// header {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: flex-start;
-//   align-items: center;
-//   background-image: url("/src/images/mobile/image-header.jpg");
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   width: 375px;
-//   height: 538px;
-//   .navbar {
-//     display: inline;
-//     justify-content: space-between;
-//     padding: 5px;
-//     .navbar-item{
-//         display: none;
-//     }
-//     .burger{
-//         margin-right: Opx;
-//       }
-//   }
-// }
-.main-title {
-  font-family: Fraunces;
-  text-align: center;
-  font-size: 30px;
-  color: $White;
+* {
+  font-size: 18px;
 }
-.egg {
-  background-image: url("/src/images/mobile/image-transform.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 375px;
-  height: 312px;
-}
-.article-white {
-  font-family: fraunces;
-  padding: 24px;
-  color: $Very_dark_desaturated_blue;
-  p {
-    font-family: barlow;
-    color: $Dark_grayish_blue;
+
+// R E S P O N S I V E
+
+@media screen and (min-width: 375px) {
+  // H E A D E R
+
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/src/images/mobile/image-header.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    // width: 375px;
+    height: 538px;
   }
-  a {
-    color: $Very_dark_grayish_blue;
-    font-size: 18px;
+  .menu-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 100px;
+  }
+
+  .arrow {
+    align-self: center;
+  }
+  .navbar {
+    display: none;
+  }
+
+  .main-title {
+    font-family: Fraunces;
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 6.25px;
+    line-height: 49.32px;
+    text-transform: uppercase;
+    color: $White;
     text-align: center;
+  }
+
+  // B O D Y
+
+  .body-container {
+    display: flex;
+    flex-direction: column;
+    //width: 375px;
+    margin: auto;
+  }
+  .article-white {
+    background-color: $White;
+    text-align: center;
+    padding: 64px 24px 64px 24px;
+    & .title {
+      font-family: fraunces;
+      font-weight: 900;
+      font-size: 32px;
+      color: $Very_dark_desaturated_blue;
+    }
+    & a {
+      font-family: fraunces;
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 15px;
+      text-decoration: none;
+      color: $Dark_desaturated_cyan;
+    }
+    & p {
+      font-family: barlow;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 30px;
+      color: $Dark_grayish_blue;
+    }
+  }
+
+  .article-background {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    & title {
+      font-family: Fraunces;
+      font-weight: 900;
+      font-size: 28px;
+    }
+    & p {
+      font-family: barlow;
+      font-size: 16px;
+      line-height: 27px;
+      color: $Dark_desaturated_cyan;
+      padding: 0px 24px 59px 24px;
+    }
+  }
+
+  .graphic-design {
+    background-image: url("/src/images/mobile/image-graphic-design.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .photography {
+    background-image: url("/src/images/mobile/image-photography.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $White;
+    padding: 64px 24px;
+    text-align: center;
+    & h3 {
+      font-family: fraunces;
+      font-size: 16px;
+      font-weight: 900px;
+      color: $Grayish_blue;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+  }
+
+  .personnal-quote {
+    & p {
+      font-family: barlow;
+      font-size: 18px;
+      line-height: 32px;
+    }
+    & img {
+      width: 72px;
+      height: 72px;
+      border-radius: 100%;
+      margin-top: 84px;
+    }
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .gallery {
+    width: 375px;
+    height: 375px;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-area: auto;
+  }
+
+  // F O O T E R
+
+  .footer-container {
+    margin: auto;
+    //width: 375px;
+    height: 350px;
+    background-color: $Dark_moderate_cyan;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .header-container {
+    background-image: url("/src/images/desktop/image-header.jpg");
+  }
+  .egg {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: url("/src/images/desktop/image-transform.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .navbar {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    font-family: barlow;
+    justify-content: space-between;
+    color: $Very_dark_desaturated_blue;
   }
 }
